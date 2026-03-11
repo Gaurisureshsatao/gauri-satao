@@ -1,109 +1,67 @@
-<!DOCTYPE html>
-<!-- saved from url=(0039)http://127.0.0.1:5500/pr%202/index.html -->
+
+<!-- saved from url=(0046)http://127.0.0.1:5500/pr%202/pr%203/index.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>saraswati College</title>
+<title>Frame Example</title>
 </head>
 
-<body>
+<frameset rows="20%,70%,10%">
+    
+    <!-- Header Frame -->
+    <frame src="./index_files/header.html" name="header">
 
-<h1 id="top">saraswati College</h1>
+    <!-- Middle Frames -->
+    <frameset cols="30%,70%">
+        <frame src="./index_files/left.html" name="left">
+        <frame src="./index_files/right.html" name="right">
+    </frameset>
 
-<!-- Navigation Links -->
-<h3>Menu</h3>
-<a href="http://127.0.0.1:5500/pr%202/index.html#courses">Courses</a> |
-<a href="http://127.0.0.1:5500/pr%202/index.html#departments">Departments</a> |
-<a href="http://127.0.0.1:5500/pr%202/index.html#faculties">Faculties</a> |
-<a href="http://127.0.0.1:5500/pr%202/index.html#library">Library</a>
+    <!-- Status Bar -->
+    <frame src="./index_files/status.html" name="status">
 
-<hr>
+</frameset>
 
-<!-- Courses Section -->
-<h2 id="courses">Courses Offered</h2>
-<ul>
-<li>Bachelor of Computer Applications (BCA)</li>
-<li>Bachelor of bussiness Applications (BBA)</li>
-<li>I master of computer Applications (I MCA)</li>
-<li>Master of Computer Applications (MCA)</li>
-</ul>
-<a href="http://127.0.0.1:5500/pr%202/index.html#top">Back to Top</a>
 
-<hr>
 
-<!-- Departments Section -->
-<h2 id="departments">Departments</h2>
-<ol>
-<li>object oriented programming</li>
-<li>Data structure</li>
-<li>operating system</li>
-<li>Web technology</li>
-</ol>
-<a href="http://127.0.0.1:5500/pr%202/index.html#top">Back to Top</a>
 
-<hr>
 
-<!-- Faculties Section -->
-<h2 id="faculties">Faculties</h2>
-<ul>
-<li>Dr.Vidur Sharma - Data structure</li>
-<li>Dr.Archna nemade - object oriented programming</li>
-<li>prof. prashant kolhe  - Web technology</li>
-<li>Prof. ketan jatale - operating system</li>
-</ul>
-<a href="http://127.0.0.1:5500/pr%202/index.html#top">Back to Top</a>
+  
 
-<hr>
 
-<!-- Library Section -->
-<h2 id="library">Library</h2>
-<p>
-Our college library has more than 10,000 books, journals, and digital resources 
-for students and faculty members.
-</p>
 
-<!-- External Link -->
-<p>Visit our website: 
-<a href="https://www.saraswaticollege.com/">saraswatiCollege Official Site</a>
-</p>
+	           
+					
+					
+				
+			
+			         
+			         
+			    
+			    
+				    
+				     
+			
+			    
+				  
+				 
+			
+		
+	
+	 
+		          
+	
+	 
 
-<a href="http://127.0.0.1:5500/pr%202/index.html#top">Back to Top</a>
 
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 
-</body></html>
+
+
+
+
+
+
+
+
+
+
+
+	 </html>
