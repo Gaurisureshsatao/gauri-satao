@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/pr%201/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Class Time Table</title>
+</head>
+<body>
+
+<h2>My Class Time Table</h2>
+
+<table border="1" cellpadding="10">
+    <tbody><tr>
+        <th>Day</th>
+        <th>10:30 - 11:30</th>
+        <th>11:30 - 12:30</th>
+        <th>01:15 -2:15</th>
+        <th>02:15 - 3:15</th>
+        <th>03:30 - 4:30</th>
+    </tr>
+
+    <tr>
+        <td>Monday</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Break</td>
+        <td>Computer</td>
+    </tr>
+
+    <tr>
+        <td>Tuesday</td>
+        <td>Science</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Break</td>
+        <td>Sports</td>
+    </tr>
+
+    <tr>
+        <td>Wednesday</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Math</td>
+        <td>Break</td>
+        <td>Computer</td>
+    </tr>
+
+    <tr>
+        <td>Thursday</td>
+        <td>Math</td>
+        <td>Computer</td>
+        <td>Science</td>
+        <td>Break</td>
+        <td>English</td>
+    </tr>
+
+    <tr>
+        <td>Friday</td>
+        <td>Science</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Break</td>
+        <td>Games</td>
+    </tr>
+
+</tbody></table>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
